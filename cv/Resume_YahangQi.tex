@@ -1,0 +1,93 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[a4paper,margin=0.95in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage{mathptmx}
+
+\definecolor{linkblue}{HTML}{0B5B84}
+\hypersetup{colorlinks=true, urlcolor=linkblue, linkcolor=linkblue}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.35em}
+\pagenumbering{gobble}
+
+\newcommand{\cvsection}[1]{%
+  \vspace{1.35em}
+  {\fontsize{25}{28}\selectfont #1}\par
+  \vspace{0.38em}
+}
+
+\newcommand{\datedentry}[2]{%
+  \noindent
+  \makebox[0.17\textwidth][l]{#1}%
+  \hspace{0.04\textwidth}%
+  \parbox[t]{0.79\textwidth}{#2}\par
+  \vspace{0.5em}
+}
+
+\begin{document}
+
+{\fontsize{30}{34}\selectfont Yahang Qi}\par
+\vspace{0.2em}
+{\fontsize{15}{18}\selectfont
+\href{mailto:yahang.qi@mail.utoronto.ca}{yahang.qi@mail.utoronto.ca}
+\,|\,
+\href{https://github.com/yahang-qi}{github.com/yahang-qi}
+\,|\,
+\href{https://scholar.google.com/citations?user=cTnZI-0AAAAJ}{Google Scholar}
+}
+
+\vspace{0.95em}
+{\fontsize{16}{22}\selectfont
+Research areas: statistical learning theory, causal inference, and large language models (LLMs).
+}
+
+\cvsection{Education}
+
+\datedentry{2025--}{\textbf{Ph.D. in Statistical Sciences, University of Toronto}.}
+
+\datedentry{2023--2025}{\textbf{M.Sc. in Computational Science and Engineering, ETH Zurich}.}
+
+\datedentry{2018--2023}{\textbf{B.Eng. in Mechanical Engineering, Tongji University}.}
+
+\cvsection{Research Experience}
+
+\datedentry{2024--2025}{\textbf{Temporally Adaptive Personalized Models for ICU Outcome Prediction}, Swiss Paraplegic Research \& ETH Zurich.\\
+Built a temporally adaptive personalized ICU outcome model based on transformer pretraining (MIMIC-III/IV) with efficient patient-specific fine-tuning. Tested full fine-tuning, adapters, and LoRA, achieving \textasciitilde25\% accuracy gains with minute-level adaptation speed.}
+
+\datedentry{2024}{\textbf{Irregular Time Series Modelling for Daily Monitoring of SCI Individuals}, Swiss Paraplegic Research \& ETH Zurich.\\
+Built an attention-based model for irregular time series with static features (AUC 0.92 for autonomic dysreflexia prediction), designed post-hoc explainability analyses, and implemented robust missing-value handling.\\
+Code: \href{https://github.com/yahang-qi/Attn-Irregular-Time-Series}{github.com/yahang-qi/Attn-Irregular-Time-Series}.}
+
+\cvsection{Publications}
+
+\datedentry{2024}{\textbf{Implicit Personalization in Language Models: A Systematic Study} (EMNLP 2024).\\
+ETH LRE Lab \& Max Planck Institute for Intelligent Systems, T\"ubingen.\\
+Paper: \href{https://arxiv.org/abs/2405.14808v1}{arxiv.org/abs/2405.14808v1};
+Code: \href{https://github.com/jiarui-liu/IP}{github.com/jiarui-liu/IP}.}
+
+\datedentry{Under Review}{\textbf{Causal Responsibility Attribution for Human-AI Collaboration}.\\
+Max Planck Institute for Intelligent Systems, T\"ubingen.\\
+Paper: \href{https://arxiv.org/abs/2411.03275}{arxiv.org/abs/2411.03275};
+Code: \href{https://github.com/yahang-qi/Causal-Attr-Human-AI}{github.com/yahang-qi/Causal-Attr-Human-AI}.}
+
+\cvsection{Work Experience}
+
+\datedentry{2023}{\textbf{Research Intern in Causal Inference and Model Fine-tuning}, Shanghai AI Lab.\\
+Processed and standardized computational and experimental properties for 50M PubChem compounds; fine-tuned Uni-Mol for downstream property prediction; and incorporated prior physicochemical knowledge via collider regression.}
+
+\datedentry{2022}{\textbf{Research Intern in Autonomous Driving Algorithm}, Shanghai Volkswagen Motor.\\
+Built a TensorRT model quantization pipeline (50\% memory reduction, 25\% inference speedup), developed 2D/3D detection visualization tools, and supported large-scale GPU training and deployment.}
+
+\cvsection{Skills}
+
+\datedentry{}{\textbf{Programming:} Python (NumPy, Pandas, PyTorch, Pyro), Bash, Git, Linux, SQL.}
+\datedentry{}{\textbf{ML \& Statistics:} deep learning, theory of causal inference, causal inference with LLMs, empirical process.}
+\datedentry{}{\textbf{Data:} irregular and multivariate time-series, structured data, missing-data, large-scale dataset handling.}
+\datedentry{}{\textbf{Systems:} Linux, multi-GPU training, TensorRT, cloud training.}
+
+\cvsection{Languages}
+Chinese (Native); English (Proficient); German (Fluent).
+
+\end{document}
