@@ -209,6 +209,49 @@
         font-size: 2rem;
       }
 
+      .research-intro {
+        max-width: 980px;
+        margin: 0 0 1.4rem;
+        font-size: clamp(1.03rem, 1.4vw, 1.24rem);
+        color: #2b2f32;
+      }
+
+      .research-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1rem;
+      }
+
+      .research-card {
+        min-height: 100%;
+        padding: 1.1rem 1.15rem 1.2rem;
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        background: rgba(255, 255, 255, 0.22);
+        box-shadow: 0 12px 28px rgba(31, 34, 37, 0.06);
+      }
+
+      .research-card h5 {
+        display: inline-block;
+        margin: 0 0 0.85rem;
+        padding: 0.25rem 0.62rem;
+        border-radius: 999px;
+        background: rgba(109, 79, 69, 0.15);
+        color: var(--accent);
+        font-size: 0.96rem;
+        font-weight: 800;
+        line-height: 1.15;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+
+      .research-card p {
+        margin: 0;
+        color: #34383a;
+        font-size: 0.98rem;
+        line-height: 1.62;
+      }
+
       .pub-list {
         list-style: none;
         margin: 0;
@@ -258,6 +301,10 @@
           grid-template-columns: 1fr;
         }
 
+        .research-grid {
+          grid-template-columns: 1fr;
+        }
+
         .content p {
           font-size: 1.07rem;
         }
@@ -274,7 +321,7 @@
     <main class="shell">
       <section class="profile-grid">
         <aside class="identity fade-up">
-          <img class="avatar" src="assets/me.JPG?v=20260217" alt="Portrait of Your Name" />
+          <img class="avatar" src="assets/me.JPG?v=20260217" alt="Portrait of Yahang Qi" />
           <h2>Yahang Qi</h2>
           <p>PhD Student in Statistics</p>
           <p>University of Toronto</p>
@@ -288,7 +335,7 @@
         <article class="content fade-up">
           <h3>About Me</h3>
           <p>
-            I am a PhD student in statistics at the University of Toronto, supvervised by <a href="https://zhijing-jin.com/home/" target="_blank" rel="noopener noreferrer">Prof. Zhijing Jin</a> and <a href="https://sites.google.com/site/kongdehanstat/" target="_blank" rel="noopener noreferrer">Prof. Dehan Kong</a>. My research focuses on the theory of causal inference and causal inference for large language models (LLMs). 
+            I am a PhD student in statistics at the University of Toronto, supervised by <a href="https://zhijing-jin.com/home/" target="_blank" rel="noopener noreferrer">Prof. Zhijing Jin</a> and <a href="https://sites.google.com/site/kongdehanstat/" target="_blank" rel="noopener noreferrer">Prof. Dehan Kong</a>. My research focuses on the theory of causal inference and causal inference for large language models (LLMs).
           </p>
           <p>
             I currently work on causal decision-making and causal inference with unstructured data.
@@ -299,6 +346,42 @@
 
 
         </article>
+      </section>
+
+      <section class="section">
+        <h4>Research</h4>
+        <p class="research-intro">
+          My research goal is to use causal inference to understand the causal mechanisms of complex
+          systems and improve decisions within those systems. I develop methods that use large language
+          models (LLMs) to bring expert knowledge into the causal inference process, and I also use
+          causal inference to understand LLMs and improve their performance.
+        </p>
+        <div class="research-grid">
+          <article class="research-card">
+            <h5>Causal Inference with LLMs</h5>
+            <p>
+              I develop methods that use LLMs as efficient tools for bringing external knowledge into
+              practical causal inference. This helps build causal inference methods that can work under
+              more relaxed assumptions.
+            </p>
+          </article>
+          <article class="research-card">
+            <h5>Mechanistic Interpretability</h5>
+            <p>
+              I develop theory and computational methods that use causal models as causal abstractions
+              of LLM behavior. This makes it possible to study LLMs through simpler causal
+              representations of otherwise complex and computationally costly systems.
+            </p>
+          </article>
+          <article class="research-card">
+            <h5>AI for Science</h5>
+            <p>
+              Causal inference describes mechanisms in complex systems, making it a useful tool for
+              science in the agentic AI regime. I study how causal methods can identify candidate causal
+              relationships and propose valuable hypotheses.
+            </p>
+          </article>
+        </div>
       </section>
 
       <section class="section">
